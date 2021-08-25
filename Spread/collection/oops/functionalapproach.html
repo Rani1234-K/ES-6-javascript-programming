@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./functionalapproach.js"></script>
+    <script>
+        function load(){
+
+            //define the instance of ref. function
+            let obj = new MyObject();
+            console.log('Add = ${obj.add(10,20)}');
+            console.log('Data Values = ${obj.data}');
+
+            document.getElementById('txt').addEventListener('keyup',function(){
+                let val = this.value;
+                if(parseInt(val) <0){
+                    this.style.backgroundColor = 'red';
+                }
+                else{
+                    this.backgroundColor = '';
+
+                }
+
+            },false
+        };
+        
+    
+    };
+        window.onload = load;
+    </script>
+</head>
+<body>
+    <h1> The Function Object</h1>
+</body>
+</html>
